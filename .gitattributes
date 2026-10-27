@@ -1,0 +1,2 @@
+* text=auto eol=lf
+structural/contracts/*.json -text whitespace=cr-at-eol

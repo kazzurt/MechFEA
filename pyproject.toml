@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mechfea"
+version = "0.1.0"
+description = "Structural mechanics workflow and read-only CalculiX result tools"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+dependencies = ["numpy>=2", "scipy>=1.14", "psutil>=7"]
+
+[project.optional-dependencies]
+desktop = ["cadquery-ocp", "gmsh", "meshio", "pyvista", "pyvistaqt", "PySide6", "qtpy", "matplotlib"]
+test = ["pytest>=8"]
+
+[project.scripts]
+mechfea = "structural.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["structural*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/structural"]
+markers = ["external: requires retained private engineering study files"]
+
+[tool.setuptools.package-data]
+structural = ["contracts/*.json"]

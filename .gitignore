@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv*/
+.cache/
+*.egg-info/
+build/
+dist/
+test-results/
+work/
+.env
+.env.*
+!.env.example
+.claude/
+*.log
+Dodec FEA/
+structural-fea-environment/temporary/
+structural-fea-environment/uv-cache/
+structural-fea-environment/solver/*
+!structural-fea-environment/solver/install-solver.ps1
+!structural-fea-environment/solver/windows-build-commit.json

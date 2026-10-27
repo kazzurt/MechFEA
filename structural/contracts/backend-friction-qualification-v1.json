@@ -1,0 +1,551 @@
+{
+  "schema_version": 1,
+  "qualification_id": "calculix_2_23_friction_v1",
+  "all_passed": false,
+  "status": "blocked_reclosure_history",
+  "version": "2.23",
+  "solver_executable_sha256": "62349096f3b76cef2f0e094d03f747187016683a233ec7f07a363c7089804876",
+  "threads": 4,
+  "coulomb_absolute_tolerance_mpa": 1e-05,
+  "coulomb_relative_tolerance": 1e-06,
+  "fixtures": {
+    "hex20_k_over_10": {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-10\\verification.json",
+      "sha256": "3d305fbc522ab5b13e3be9ebadbd7426befe3f878449e68ceeb6e25a8fd28db6"
+    },
+    "hex20_k_over_100": {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-100\\verification.json",
+      "sha256": "67ee4811ad4525690a40701e460d66e013712c76c2008e083818ce3e6a29ee38"
+    },
+    "hex20_frictionless": {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\frictionless-control\\verification.json",
+      "sha256": "eab9e11345a202742fde420d56d4b0c30b125a5c62f6196a6b079dc3ba72019f"
+    },
+    "tetra10_k_over_10": {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-10\\verification.json",
+      "sha256": "fe7a55df29a215f880f52292fb7bd681eb5fdefc57dc1aa1a4cc7c9d3e13c4a5"
+    },
+    "tetra10_k_over_100": {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-100\\verification.json",
+      "sha256": "9a7ff8eb620269beb6bf74fab907d5e187e998a064f756b7c7baed9166a9a695"
+    },
+    "tetra10_mu_010": {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-mu-010\\verification.json",
+      "sha256": "e4f32c6367e93dded21ff0c2441df07188c2e4a2f3be5e5f70b1857ebc62633d"
+    },
+    "tetra10_frictionless": {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-frictionless\\verification.json",
+      "sha256": "99b89f28e7c7453514ed7daa7f2eab7598c29f31763c8ccc3263c9b96f2ea104"
+    },
+    "pretension_shoulder": {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\verification.json",
+      "sha256": "b9e8f8f785567f85e5fe1431d2d56203090493a3e948040540ccd872792cdb37"
+    },
+    "tetra10_cycle_k_over_10": {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-10\\verification.json",
+      "sha256": "9bf87e607ad3d7ed1c825cd82c04e7d685edd17a0f124197463bed8d7b8f1acc"
+    },
+    "tetra10_cycle_k_over_100": {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-100\\verification.json",
+      "sha256": "9eeb384aa05a8b9ff38ae8ddc9fd8d80bf920f7b2519bb8c11ff734c8b6cf315"
+    }
+  },
+  "diagnostic": {
+    "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-reclosure-increment-diagnostic-v1\\cycle-k-over-100-fine-opening\\verification.json",
+    "sha256": "d1aeb911146b59fadc4ff6a9fd0fa0a23532526e102a8349416c9d6d4cbdbd14"
+  },
+  "independent_audit": {
+    "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-validation-deliverables\\friction-fixture-review\\independent-audit.json",
+    "sha256": "69d7f670140d1dbf4d57d1905913afc147dc50ebeb7c0316cbed1126d081e232"
+  },
+  "retained_artifacts": [
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-10\\friction.inp",
+      "sha256": "85e4ad44fbcc6d4adb237ec2780e5148e2aa101087a20ad2ddc4e97b4ae391fc"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-10\\friction.dat",
+      "sha256": "39a907558aad5798ead34358e1248c57852d6615bec50a88433e1bcab61cf503"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-10\\friction.frd",
+      "sha256": "ee985ba865ee3266cd7554ec427b21cce85b12fb223abee7f118902baffab689"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-10\\friction.run.json",
+      "sha256": "32e0ea222fe0ebee8b035287ee41f28a88480f49e471faf2aa15a1f9313def2e"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-10\\friction.stdout.log",
+      "sha256": "50908544fba6b74a7e26a7f60829cec91c0d9d8ed169a1a16e3f4f52aada7ef5"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-10\\friction.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-10\\friction.sta",
+      "sha256": "d403c9dba1b84ca166c97d10be57ebdf54102a9e9a1c41d1b22a9eb2a8d3da73"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-10\\friction.cvg",
+      "sha256": "f13377e5b2da4de7e4b6944e471682891085c4cf676c69583b5e0acc7d630d55"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-10\\targets.json",
+      "sha256": "7c78e67b2b918c019e37e64ab2d0e813f79b1d48f3e1e68e51cf70898d3c948a"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-100\\friction.inp",
+      "sha256": "44208ae98c12e943b96082e986502f909042d246db4819f2cbd91f580ba7b102"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-100\\friction.dat",
+      "sha256": "0bc60278539591c790c538285e58e1a350b1c03fe8f4d62ef46d1420a5913e21"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-100\\friction.frd",
+      "sha256": "b1e2c62ecafe2ab059ad36ac6f7076899a1a527860bbd5926e38814e676a098d"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-100\\friction.run.json",
+      "sha256": "288fdf7983d2c60e762e5c36b1c0a56da618f931c6639d530144a7c86162fee2"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-100\\friction.stdout.log",
+      "sha256": "7ebd51c434db372639fafc9417e8f9823d7964b7bbe42bfebe969ece5d8da3d5"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-100\\friction.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-100\\friction.sta",
+      "sha256": "6fcd5fd82c0ca1bea8475e3e90cb8f24b5b4c86d1005178fc96ef00024a9739b"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-100\\friction.cvg",
+      "sha256": "4f1e6e2c3999fae5620888f12982cf8c063b05f37052a4c7303e445eefe54c3b"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\slope-k-over-100\\targets.json",
+      "sha256": "afdb8d3cb4014e970f7b39da5eee352072e9e3e7572ae3b8304ab4e828aa7e15"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\frictionless-control\\friction.inp",
+      "sha256": "5fc12821ccd1aaf16a149ddd84f8723aa07320050e452b533172e02602f5d0c7"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\frictionless-control\\friction.dat",
+      "sha256": "2182bcddc8bf5e81849a17c4c9a0ec2a9f3a153bc7106d1a77a441c4c7920986"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\frictionless-control\\friction.frd",
+      "sha256": "e87044805ebb102f69049736ecdf2f33c5b7c8fa282b0b69aae3590ef86d2a15"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\frictionless-control\\friction.run.json",
+      "sha256": "c42576e1b72f4e9f57e5aaf92f668881fc6f1439ea9741d9e614c691372c72d6"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\frictionless-control\\friction.stdout.log",
+      "sha256": "ecf956480560e6349bf0ed5be824584f9f0c254b6eadd94ab8c185fa4ad25588"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\frictionless-control\\friction.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\frictionless-control\\friction.sta",
+      "sha256": "6fcd5fd82c0ca1bea8475e3e90cb8f24b5b4c86d1005178fc96ef00024a9739b"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\frictionless-control\\friction.cvg",
+      "sha256": "a8d9c48291f9581985acfaae0d03adfa07c7b6df00022046ad0b7ba91177a8d5"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\frictionless-control\\targets.json",
+      "sha256": "757c83e255086ee915670de4dc2a10a98c4b2d4059a4ab8beb22f934eee99728"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-10\\friction.inp",
+      "sha256": "299be08630f2168c02d74134ec56f82ad0f66d17fc9b0a46e4fc0947accdaf68"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-10\\friction.dat",
+      "sha256": "28f27216399be0187df020455c9286f832be1368328cdc08d28740c161cd5440"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-10\\friction.frd",
+      "sha256": "5b374a4c080184aedd565752266a6ad1564f14f7ce704caf55234618e9566c73"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-10\\friction.run.json",
+      "sha256": "87fe6bc52e60da4d823fb578d5483f66e11b005346f3d2e6d7a0c92f695d754a"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-10\\friction.stdout.log",
+      "sha256": "1c499e07e6f696b2c26772ad4560f944b36fad642016a3bf9ecd47366c70c08b"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-10\\friction.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-10\\friction.sta",
+      "sha256": "d403c9dba1b84ca166c97d10be57ebdf54102a9e9a1c41d1b22a9eb2a8d3da73"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-10\\friction.cvg",
+      "sha256": "b8ece6cfeadcc8d1e62b6c982c5e1b76824859979958de03caa5ba5fd79cb6be"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-10\\targets.json",
+      "sha256": "6870bad4a91d4a0074fa9d6ec267139d269da01ffbec3b07464fe02ee56c4335"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-100\\friction.inp",
+      "sha256": "1d2a7b94d2c2ee6ead269ed8fd9312cc375b6fa2f4dfe528e2777a0a570b2ceb"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-100\\friction.dat",
+      "sha256": "de2a25682af316816ac4b4c31cd42eb53302e781c54c91486055cb390e12bef3"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-100\\friction.frd",
+      "sha256": "31c331683427253d5d6510d81dd7ef85679f0f9cdf633d6e7005afe35e75fed3"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-100\\friction.run.json",
+      "sha256": "85ccf25b356add6781e696068b1291da1f85392f6d1af19d2a0e8cccab54432a"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-100\\friction.stdout.log",
+      "sha256": "b464dfe3c5a77bf4886dd3c8a696cec9950544423790c43960fff56c232fd0c9"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-100\\friction.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-100\\friction.sta",
+      "sha256": "6fcd5fd82c0ca1bea8475e3e90cb8f24b5b4c86d1005178fc96ef00024a9739b"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-100\\friction.cvg",
+      "sha256": "9ecdc91b37c48723c7e2f91559917a0a058de95e373e7121a0b2cd77ef95c791"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-slope-k-over-100\\targets.json",
+      "sha256": "05b18f235a6c8a3675766d5b47cddacae536cf7255023bd5dcb5b6c8754be8ae"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-mu-010\\friction.inp",
+      "sha256": "f9f8ade10bebf751486d4b80abe21a47140f553f24e890d62753693b4168311a"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-mu-010\\friction.dat",
+      "sha256": "6227ebd920bd77a08f7f5a110dd41550fca5b630ddd2bdbbc07466f7074dd4fc"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-mu-010\\friction.frd",
+      "sha256": "041b7a506272a5ee4465b31342df80ad329709734fe3dccc84a96b0b1f3c3077"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-mu-010\\friction.run.json",
+      "sha256": "b15cd82ebb7101e17b217a91d5834b03911d5cca27c4fd61d51b82f821d06fc6"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-mu-010\\friction.stdout.log",
+      "sha256": "00fc0c7fc5008003b8fd21a746c0e1db8a07ca735db363bdb88bd9eb7618989a"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-mu-010\\friction.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-mu-010\\friction.sta",
+      "sha256": "d403c9dba1b84ca166c97d10be57ebdf54102a9e9a1c41d1b22a9eb2a8d3da73"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-mu-010\\friction.cvg",
+      "sha256": "3c05b5a8d9aeadff3435a92e362c7a6dec6d7feb3a7116034b1a1f3f2183c625"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-mu-010\\targets.json",
+      "sha256": "d4e0ddad5ac7189a7513f08f8b0a99f94a8177e8e833c3d37c4721088d2d7296"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-frictionless\\friction.inp",
+      "sha256": "c4ef50da9d7ba7ea35c05f87feed93b298e6ce807794adca828f3468bcdaf9b0"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-frictionless\\friction.dat",
+      "sha256": "4135ec17d66518afce1350b7e5b405ff8d145b02e9dcec36cde570ff77aae7cc"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-frictionless\\friction.frd",
+      "sha256": "f52e1a2cbdbefe414118c70884df9d7cb7e22e55bb664be59fd50d765172351b"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-frictionless\\friction.run.json",
+      "sha256": "a66c0bf0e7f33091dbc063868ec01519ca03a0b9d7b2b161027a1d9365711f17"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-frictionless\\friction.stdout.log",
+      "sha256": "977b9c6936b08d24a31202075e2fb6b36c4d94ce2fa60261b368669150dd30e4"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-frictionless\\friction.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-frictionless\\friction.sta",
+      "sha256": "6fcd5fd82c0ca1bea8475e3e90cb8f24b5b4c86d1005178fc96ef00024a9739b"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-frictionless\\friction.cvg",
+      "sha256": "bf8c2da0b33f87f06c2dc172c81dee47ac927739880858c6bf9adb03bd98356d"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\vector-frictionless\\targets.json",
+      "sha256": "e8bc8c545c0736ca36fc0cdd9f835e81458e226e406ac266cda7d154b9aff657"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\short_screw.inp",
+      "sha256": "45044a1b65d1b73db5e1292ad7feca6338ebea196f30931957ff1dac12cc76ee"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\short_screw.dat",
+      "sha256": "bbe8a1cbfc70a33955fe4672567844344949063c12bab1a8b22833a28b932ad5"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\short_screw.frd",
+      "sha256": "5f351c33df1c59d9314d5251aca41ed858d6f8db1f9795376124c5318c8284a5"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\short_screw.run.json",
+      "sha256": "928d325c869ce11eb5b3d37bdad2e4a89865225e956394bd3715a88218403a20"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\short_screw.stdout.log",
+      "sha256": "1a4249a0513f5b3c770fd25494d8217382e931b5132e65a7cc3174c54823724b"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\short_screw.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\short_screw.sta",
+      "sha256": "ce30fa5fbf5d545692cbce8c04b37e570941625436c465e30a4c982180dbf83f"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\short_screw.cvg",
+      "sha256": "d56a61d1e49de24d1e6089cabed50fe745511e1cfaefd0a29ffee02197911174"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\targets.json",
+      "sha256": "9958a7cc2ca5fc15ce59869860cfb8de77980a694e1e52502df2b9edb97c37ee"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-10\\friction.inp",
+      "sha256": "6786ce9bffa06807608eb567ca375a2c324b3b657bae029c9a80ba78cf9f447c"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-10\\friction.dat",
+      "sha256": "6342dc47efd8734cca988c94baac3ed319ae23aa236f021821aba5e864cfadcd"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-10\\friction.frd",
+      "sha256": "41d20d813d5c60486c3b657e4c01c206e7b520a8d87dbcaf38bb65da38ea9c3e"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-10\\friction.run.json",
+      "sha256": "b7dba9fce25d9d04cbe5896cdccffa42ed3b3796c8c3a969f3dca2616756e6cd"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-10\\friction.stdout.log",
+      "sha256": "e6f3de78484358f38564b46c3417cb7265838f913fc8a60c66922d2c2de8664a"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-10\\friction.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-10\\friction.sta",
+      "sha256": "4264b8633e85c2328aeea1f6907c30a604f0234f7d8392b5b4805baac76d4229"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-10\\friction.cvg",
+      "sha256": "e6fa8bf36b3e7d6a8829735346485f0e4611878f4705da5b8805df4ee83fd903"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-10\\targets.json",
+      "sha256": "37e1922897881e85c587edfdd1ae783583756a3d5b1d9f7be728e6b6da6c922e"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-100\\friction.inp",
+      "sha256": "3d218e04e86210955793165355217a8f2cda3216d154b1f70cf2f049af87d499"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-100\\friction.dat",
+      "sha256": "dbadfde3c3aaeea0ae7fc4a3f4f68430392b0b3034dcc0aa44c85b4c7b1f3faf"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-100\\friction.frd",
+      "sha256": "f8faf8d83bc6f70dd95519195867734f5f1f5b9b185cb70381584ea37700f208"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-100\\friction.run.json",
+      "sha256": "e9726d00e94c2df1c3328d6712787b80830d4609d0e131f8ac489783d77617be"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-100\\friction.stdout.log",
+      "sha256": "a02203d3785f92b4712538889bbe19ca525cea3083c505c6691a306d2a92ddba"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-100\\friction.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-100\\friction.sta",
+      "sha256": "732a14146b4f2a9ca8bc32decb1fb5ecef7b68ad376890527f6011f986810cc5"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-100\\friction.cvg",
+      "sha256": "faeb35eb0ed4c60721dde2f51c88bedc718f20785ca164c8790e8985d63ca9e6"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\cycle-k-over-100\\targets.json",
+      "sha256": "f98b3d24c3f560af8c0f0dcb24121c62d21f675d92209321c37bd32a11494774"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-reclosure-increment-diagnostic-v1\\cycle-k-over-100-fine-opening\\friction.inp",
+      "sha256": "6b9b7a820c0f736ceece0f93395e64f26745bfb208d61e729d62e3d6627ab4ba"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-reclosure-increment-diagnostic-v1\\cycle-k-over-100-fine-opening\\friction.dat",
+      "sha256": "81fd770c57382083aee2f4c75643a2f8c03716884a94968c6a62e875ffcfb204"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-reclosure-increment-diagnostic-v1\\cycle-k-over-100-fine-opening\\friction.frd",
+      "sha256": "32bdfde4c7b74bc33c1b2cdc712a2c4c32785556d5774e71505ba5b48cedc2a7"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-reclosure-increment-diagnostic-v1\\cycle-k-over-100-fine-opening\\friction.run.json",
+      "sha256": "f393e34b9147b5e7c620f757ead5da21e5636ca21d6ab66c0feb262ea1dbd611"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-reclosure-increment-diagnostic-v1\\cycle-k-over-100-fine-opening\\friction.stdout.log",
+      "sha256": "e23731eb19de37388660b1c45b44b1821632cb2059c3c89dae5c2809220f499b"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-reclosure-increment-diagnostic-v1\\cycle-k-over-100-fine-opening\\friction.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-reclosure-increment-diagnostic-v1\\cycle-k-over-100-fine-opening\\friction.sta",
+      "sha256": "4079ddfe13ddd191aad3b74f3ca67dc55c1d6c69f8f42d8bed51de8e8657d75e"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-reclosure-increment-diagnostic-v1\\cycle-k-over-100-fine-opening\\friction.cvg",
+      "sha256": "6d9b4be06caa3c574aa36da4620b9213f897a54e95ebcc78cd2e5e0d54818791"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-reclosure-increment-diagnostic-v1\\cycle-k-over-100-fine-opening\\targets.json",
+      "sha256": "9b25f599b036936da4ea1e9c0d1547b873ac7b5bb3b7cd6131c9545368d4ce09"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\friction_fixture_recipe-before-reader-fix.py",
+      "sha256": "91195ff24572f28f564e0437ec8b54c3a630329f23082e97e8843e0640416e51"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\friction_fixture_recipe.py",
+      "sha256": "c64b918bf1025b2b2ded81eff8775265c1878a25cc72aaae974009d62a30f4a5"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-tetra10-vector-v1\\friction_fixture_recipe.py",
+      "sha256": "a741da2d03938ec94d3dbef1945b2b8a7c4834af6ddf64c27e8e65313c2c891f"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\fixture_recipe.py",
+      "sha256": "431cb73a36a9be5b6e9479c0583b7c12951685334930365ecd9dcca24239e43b"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\review_fixture-before-pressure-load-fix.py",
+      "sha256": "060bf39f1943bdc52a3e6e19bacee8695369cfb7c0d40651e1607821c0a5a043"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\review_fixture.py",
+      "sha256": "ccbc2aaf9c23b43adeae8fd3feeabe9a260046b0339eff2330e973747eb9839b"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-reclosure-cycle-v1\\friction_history_recipe.py",
+      "sha256": "0e8109f3b9b96786d1ed0d96e87ce059fdca1889e6186fd78798e8813c5c637a"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-reclosure-increment-diagnostic-v1\\reclosure_increment_recipe.py",
+      "sha256": "f38a8b18f7311514d952b5d9c1288f3f94117341600871adfef8d4be4a9d70b3"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\structural-fea-environment\\solver\\documentation\\contact-source-review-2.23\\springforc_f2f.f",
+      "sha256": "3be67688eb16a95739e09990c34ae0d2614acff216b254ea474bbf7c4d9e1ba4"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\structural-fea-environment\\solver\\documentation\\contact-source-review-2.23\\gencontelem_f2f.f",
+      "sha256": "853e2159f37666bc1430516bb4e5c65b6ba484ef1866454930e66cf317fb8afe"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\structural-fea-environment\\solver\\documentation\\contact-source-review-2.23\\source-manifest.json",
+      "sha256": "b1de6faead8ba5926e161f23d391535dfbabc21b36e50c6dfa861cbe5d5d32ba"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\structural\\backends\\calculix.py",
+      "sha256": "44f14882ed55f4dc4537fbae01461cc5f3566efe9abdc8324bc9fc34501b50ad"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-validation-deliverables\\friction-fixture-review\\finalize_friction_evidence.py",
+      "sha256": "d576c69c88086e90368cb90e027b4c7586c45130a73bc4d58fb0863d324756d2"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\rigid-anchorage-elimination-equivalence\\mesh-manifest.json",
+      "sha256": "e8b0570f20891fdad8216fd95997d27bfd3096ebb05d940999f49f36796e59c3"
+    }
+  ],
+  "retained_review_failures": [
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1\\pre-execution-failure.json",
+      "sha256": "cc85ecb462459a5930364ea039fe48433e4cce2ebdeddca995ca558be5c56a7f"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\fifth-review-failure-summary.json",
+      "sha256": "26aa0538007802e39cc904854764d73113f93aa0ae7caff521e302e9c18eb013"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\fourth-review-failure-summary.json",
+      "sha256": "55022043696aa95bf489ef2dae4d9919b9fbf3fc2cc6f5d550de502189bc7062"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\initial-review-failure-summary.json",
+      "sha256": "aa817edddcbc02a81ffa33fc49ab4e085f70351b95147f04a65aa5c3f1d8ce2b"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\second-review-failure-summary.json",
+      "sha256": "ca287526a51f067fc7cb3bbe855f019727151aeb1f62124299448594a5bcca73"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-native-history-v1-attempt2\\third-review-failure-summary.json",
+      "sha256": "016837b5463cb03d9d21897ef32ae5957533ac0291f8ce82d8633a1991ff99e9"
+    },
+    {
+      "path": "C:\\Users\\Kurtz\\Documents\\KurtsFEM\\Dodec FEA\\structural-fea-benchmark-runs\\fixtures\\friction-pretension-shoulder-v1\\initial-review-missing-pressure-load.json",
+      "sha256": "cf736675e3f059990c49a74410f63e0ff6e33076c3c18ec028c302024ba4164f"
+    }
+  ],
+  "limitations": [
+    "Zero-shear reclosure and subsequent fresh-stick expectations failed at both stick slopes.",
+    "Ten-times-finer normal opening/reclosure increments did not fix the failure.",
+    "Local Coulomb bounds and equilibrium pass even with the wrong reclosure history, so they cannot alone qualify frictional assembly results.",
+    "No physical coefficient or nonzero-friction assembly case is qualified; the frictionless proof remains separate and unchanged."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "same_input_assembly_repeatability_v1",
+  "declared_date": "2026-10-18",
+  "declaration": "Defined before the first full-assembly repeat; not fitted to repeat results",
+  "relative_tolerance": 0.001,
+  "absolute_tolerances": {
+    "displacement_mm": 1e-07,
+    "force_n": 0.001,
+    "moment_nmm": 0.1,
+    "region_stress_mpa": 0.001
+  },
+  "rule": "absolute scalar or Euclidean vector difference <= max(absolute tolerance, relative tolerance times reference magnitude)",
+  "states": [
+    "preload",
+    "loaded"
+  ],
+  "section_distances_mm": [
+    35.0,
+    75.0,
+    125.0,
+    175.0
+  ],
+  "regions": [
+    "center",
+    "slots",
+    "seats"
+  ],
+  "required_threads": 4,
+  "required_solver_version": "2.23",
+  "identity": "Exact bytes of deck, frozen project, assembly metadata, prepared mesh and solver mesh; same pinned executable, threads, controls, reader implementations and metric definition",
+  "scope": "Repeatability of fixed both-state global/integrated/finite-volume response metrics; not bitwise native outputs, every nodal value, convergence, cross-code identity or design adequacy"
+}

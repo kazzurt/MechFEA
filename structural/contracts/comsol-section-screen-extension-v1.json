@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "contract_id": "comsol_section_vector_screen_extension_v1",
+  "declared_utc": "2026-10-18T07:35:20Z",
+  "timing": "Defined after the original assembly solve; not part of the original pre-solve screen freeze",
+  "free_span_distances_mm": [
+    35.0,
+    75.0,
+    125.0,
+    175.0
+  ],
+  "section_coordinate_tolerance_mm": 1e-09,
+  "vector_rule": "Euclidean norm(candidate-reference) <= max(absolute tolerance, relative tolerance*Euclidean norm(reference))",
+  "displacement_tolerances": "Unchanged original reference-manifest displacement relative/absolute tolerances: 0.05 and 1e-5 mm",
+  "force_tolerances": "Unchanged original reference-manifest section-force relative/absolute tolerances: 0.05 and 1 N",
+  "moment_relative_tolerance": 0.05,
+  "moment_characteristic_length_mm": 233.68,
+  "moment_absolute_tolerance_definition": "Original 1 N section-force tolerance multiplied by existing 233.68 mm half-length = 233.68 Nmm",
+  "moment_origin": "Registered section center [0,0,-distance_mm], matching the retained reference reconstruction",
+  "other_sections": "Retained as diagnostics; excluded from section-screen acceptance",
+  "scope": "Both final states; four required free-span stations; maximum pipe displacement and fixed-volume stress screens remain unchanged",
+  "prior_artifacts": "Original reference manifest and earlier comparison reports remain unchanged"
+}
